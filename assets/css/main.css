@@ -564,7 +564,7 @@ section{
 
 
 /* Estilos específicos para pantallas pequeñas (teléfonos) */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
     body {
         font-size: 14px; /* Reducir el tamaño de la fuente para pantallas pequeñas */
     }
@@ -575,7 +575,7 @@ section{
 }
 
 /* Estilos específicos para tablets y pantallas medianas */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
     body {
         font-size: 16px; /* Ajustar el tamaño de la fuente para tablets y pantallas medianas */
     }
