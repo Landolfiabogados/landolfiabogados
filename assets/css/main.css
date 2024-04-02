@@ -565,22 +565,28 @@ section{
 
 /* Estilos específicos para pantallas pequeñas (teléfonos) */
 @media only screen and (max-width: 600px) {
-    /* Estilos específicos para pantallas pequeñas */
     body {
         font-size: 14px; /* Reducir el tamaño de la fuente para pantallas pequeñas */
     }
     .container {
         width: 90%; /* Hacer el contenedor principal más estrecho para pantallas pequeñas */
     }
-    /* Aquí puedes agregar más estilos específicos para pantallas pequeñas si es necesario */
+    /* Agrega aquí más estilos específicos para pantallas pequeñas si es necesario */
 }
 
 /* Estilos específicos para tablets y pantallas medianas */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    /* No agregues estilos aquí, ya que deseas que las modificaciones solo se apliquen a dispositivos móviles */
+    body {
+        font-size: 16px; /* Ajustar el tamaño de la fuente para tablets y pantallas medianas */
+    }
+    .container {
+        width: 80%; /* Hacer el contenedor principal un poco más amplio para tablets y pantallas medianas */
+    }
+    /* Agrega aquí más estilos específicos para tablets y pantallas medianas si es necesario */
 }
 
 /* Estilos específicos para pantallas grandes (computadoras de escritorio) */
 @media only screen and (min-width: 1025px) {
     /* No agregues estilos aquí, ya que deseas que las modificaciones solo se apliquen a dispositivos móviles */
 }
+
