@@ -96,14 +96,35 @@ section{
 .navbar-toggle{
 	border-radius: 0;
 }
-@media (min-width: 768px){
-	.navbar-brand img{
-		width: 110px;
-	}
-	.navbar-nav>li>a{
-		padding-top: 30px;
-		padding-bottom: 30px;
-	}	
+/* Estilos por defecto */
+.navbar-brand img {
+    width: 80px; /* Tamaño del logotipo en dispositivos móviles */
+}
+.navbar-nav>li>a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Estilos específicos para tablets (min-width: 601px) y pantallas medianas (max-width: 1024px) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .navbar-brand img {
+        width: 100px; /* Tamaño del logotipo en tablets */
+    }
+    .navbar-nav>li>a {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+/* Estilos específicos para pantallas grandes (min-width: 1025px) */
+@media only screen and (min-width: 1025px) {
+    .navbar-brand img {
+        width: 110px; /* Tamaño del logotipo en pantallas grandes */
+    }
+    .navbar-nav>li>a {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 }
 
 
@@ -393,10 +414,23 @@ section{
 	opacity: 0.5;
 	transition: all 0.4s ease-in-out;
 }
-@media (min-width: 768px){
-	.client-box img{
-		padding: 50px 0;
-	}
+/* Estilos por defecto */
+.client-box img {
+    padding: 20px 0; /* Relleno por defecto para dispositivos pequeños */
+}
+
+/* Estilos específicos para tablets (min-width: 601px) y pantallas medianas (max-width: 1024px) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .client-box img {
+        padding: 30px 0; /* Relleno para tablets y pantallas medianas */
+    }
+}
+
+/* Estilos específicos para pantallas grandes (min-width: 1025px) */
+@media only screen and (min-width: 1025px) {
+    .client-box img {
+        padding: 50px 0; /* Relleno para pantallas grandes */
+    }
 }
 .client-box:hover img{
 	opacity: 1;
@@ -562,26 +596,3 @@ section{
 	}
 }
 
-
-/* Estilos específicos para pantallas pequeñas (teléfonos) */
-.small-screen body {
-    font-size: 14px; /* Reducir el tamaño de la fuente para pantallas pequeñas */
-}
-
-.small-screen .container {
-    width: 90%; /* Hacer el contenedor principal más estrecho para pantallas pequeñas */
-}
-
-/* Estilos específicos para tablets y pantallas medianas */
-.medium-screen body {
-    font-size: 16px; /* Ajustar el tamaño de la fuente para tablets y pantallas medianas */
-}
-
-.medium-screen .container {
-    width: 80%; /* Hacer el contenedor principal un poco más amplio para tablets y pantallas medianas */
-}
-
-/* Estilos específicos para pantallas grandes (computadoras de escritorio) */
-.large-screen {
-    /* Los estilos por defecto para pantallas grandes ya están definidos aquí */
-}
