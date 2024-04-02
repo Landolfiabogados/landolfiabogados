@@ -89,3 +89,27 @@ $('#subscription-form').submit(function(e) {
     });
 
 });
+
+// Obtener el ancho de la ventana del navegador
+var windowWidth = window.innerWidth;
+
+// Función para aplicar estilos según el tamaño de la pantalla
+function applyStyles() {
+    if (windowWidth <= 600) {
+        document.body.classList.add('small-screen');
+        document.querySelector('.container').classList.add('small-screen-container');
+    } else if (windowWidth >= 601 && windowWidth <= 1024) {
+        document.body.classList.add('medium-screen');
+        document.querySelector('.container').classList.add('medium-screen-container');
+    } else {
+        document.body.classList.add('large-screen');
+        document.querySelector('.container').classList.add('large-screen-container');
+    }
+}
+
+// Llamar a la función cuando se carga la página y cuando cambia el tamaño de la ventana
+window.onload = applyStyles;
+window.onresize = function() {
+    windowWidth = window.innerWidth;
+    applyStyles();
+};
