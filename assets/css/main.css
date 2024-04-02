@@ -564,7 +564,7 @@ section{
 
 
 /* Estilos específicos para pantallas pequeñas (teléfonos) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
     body {
         font-size: 14px; /* Reducir el tamaño de la fuente para pantallas pequeñas */
     }
@@ -575,7 +575,7 @@ section{
 }
 
 /* Estilos específicos para tablets y pantallas medianas */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
     body {
         font-size: 16px; /* Ajustar el tamaño de la fuente para tablets y pantallas medianas */
     }
@@ -587,6 +587,5 @@ section{
 
 /* Estilos específicos para pantallas grandes (computadoras de escritorio) */
 @media only screen and (min-width: 1025px) {
-    /* No agregues estilos aquí, ya que deseas que las modificaciones solo se apliquen a dispositivos móviles */
+    /* Los estilos por defecto para pantallas grandes ya están definidos aquí */
 }
-
