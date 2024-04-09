@@ -125,9 +125,9 @@ section{
 .intro h1{
 	position: relative;
 	color: #fff;
-	font-size: 90px;
+	font-size: 30px;
 	text-transform: uppercase;
-	line-height: 1;
+	line-height: 4;
 }
 .intro h1:after, .intro h1:before{
 	content: '';
